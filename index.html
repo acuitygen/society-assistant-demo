@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Society Assistant · Demo (sample data)</title>
+<meta name="description" content="Clickable demo of Society Assistant: a WhatsApp assistant and members' dashboard for housing societies. All data is fictional.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2314213d'/%3E%3Ctext x='32' y='43' font-size='30' text-anchor='middle' fill='%23c9a227' font-family='Georgia'%3ESH%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="banner" role="note"><strong>Demo, sample data.</strong> Every name, flat, number and message here is invented. Nothing is sent to WhatsApp, email or any AI service.</div>
+<div class="shell">
+  <aside class="side" aria-label="Main">
+    <div class="crest"><span class="mono" aria-hidden="true">SH</span><span><b>Sunrise Heights</b><small>Co-op Housing Society · fictional</small></span></div>
+    <nav id="nav"></nav>
+    <div class="side-foot" id="who"></div>
+  </aside>
+  <div class="body">
+    <header class="top">
+      <button class="menu" id="menu" aria-label="Open menu" aria-expanded="false">☰</button>
+      <span class="sync">Last synced from MyGate: 18 Oct 2026 (sample)</span>
+      <label class="role">Preview as
+        <select id="role">
+          <option value="member">Member · A-402</option>
+          <option value="manager">Society Manager</option>
+          <option value="secretary">Secretary</option>
+        </select>
+      </label>
+    </header>
+    <main id="main" tabindex="-1"></main>
+  </div>
+</div>
+<div id="toast" role="status" aria-live="polite"></div>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
